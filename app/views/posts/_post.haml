@@ -1,6 +1,6 @@
 .content
-  .content__left
-    .content__left--image
+  .content__image
+    = image_tag post.image.url, class: 'post__image' if post.image.present?
   .content__right
     .content__right__top
       = link_to post.title, post_path(post.id), class: "content__right__top--title"

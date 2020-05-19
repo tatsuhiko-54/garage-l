@@ -1,12 +1,15 @@
-.postTitle
-  = @post.title
-.postDate
-  = @post.created_at
-.postAuthor
-- if user_signed_in? && current_user.id == @post.user_id 
-  .postManage
-    = link_to "編集", edit_post_path(@post.id), class: "postManage__edit"
-    = link_to "削除", post_path(@post.id), method: :delete, class: "postManage__delete"
-.postText
-  = simple_format @post.content
--# 【simple_format】メソッドは、投稿時に改行を含むデータが送信されたときに、その改行を反映させるもの
+.content-man
+  .content-man__image
+    -# = image_tag post.image.url, class: 'post__image' if post.image.present?
+  .content-man__postTitle
+    = @post.title
+  .content-man__postDate
+    = @post.created_at
+  .content-man__postAuthor
+  - if user_signed_in? && current_user.id == @post.user_id 
+    .postManage
+      = link_to "編集", edit_post_path(@post.id), class: "postManage__edit"
+      = link_to "削除", post_path(@post.id), method: :delete, class: "postManage__delete"
+  .content-man__postText
+    = simple_format @post.content
+  -# 【simple_format】メソッドは、投稿時に改行を含むデータが送信されたときに、その改行を反映させるもの
