@@ -1,8 +1,16 @@
 .content-man {
   margin: 30px auto 0;
-  height: 600px;
   width: 90%;
-  border: solid 1px; 
+  height: 100vh;
+  border: solid 1px #f6f6f6; 
+  box-shadow: 0 0 3px rgb(85, 85, 85);
+  .show__image {
+    text-align: center;
+    margin-top: 9px;
+    img {
+      border: solid 1px #b1afaf;
+    }
+  }
   &__postTitle{
     padding-top: 20px;
     text-align: center;
@@ -44,5 +52,7 @@
   }
   &__postText{
     margin: 20px 30px;
+    border: solid 1px #b1afaf;
+    padding: 10px;
   }
 }

@@ -1,6 +1,6 @@
 .content-man
-  .content-man__image
-    -# = image_tag post.image.url, class: 'post__image' if post.image.present?
+  .show__image
+    = image_tag @post.image.url, class: 'post__image' if @post.image.present?
   .content-man__postTitle
     = @post.title
   .content-man__postDate

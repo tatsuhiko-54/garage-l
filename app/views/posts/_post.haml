@@ -1,11 +1,13 @@
 .content
   .content__image
     = image_tag post.image.url, class: 'post__image' if post.image.present?
+    .title-man 
+      = link_to post.title, post_path(post.id), class: "link1"
   .content__right
-    .content__right__top
-      = link_to post.title, post_path(post.id), class: "content__right__top--title"
     .content__right__bottom
       .content__right__bottom--userName
-        = post.user.nickname
+        = "＠#{post.user.nickname}"
       .content__right__bottom--date
-        = post.created_at
+        = post.created_at.strftime("%m月%d日 %H時%M分")
+      -# .content__right__bottom--text
+      -#   = simple_format post.content
