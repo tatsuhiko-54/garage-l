@@ -1,6 +1,7 @@
 .new-line
-  new
-
+  新規投稿の作成
+.drop-man
+  写真を追加
 = form_with model: @post, class: :form, local: true do |form|
   = form.file_field :image, class: :form__image
   = form.text_field :title, placeholder: :タイトル, class: :form__title
