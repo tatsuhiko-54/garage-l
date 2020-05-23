@@ -2,38 +2,44 @@ body{
   background-color: #fffffff3;
   min-width: 650px;
   .header{
-    height: 56px;
+    height: 80px;
     width: 100%;
-    padding: 0 150px;
-    background-color: #35cec1;
-    color: #fff;
+    padding: 10px 150px;
+    color: black;
     display: flex;
     justify-content: space-between;
+    box-shadow: 0 0 3px rgb(85, 85, 85);
     &__title{
       font-size: 30px;
       line-height: 56px;
       &--text{
         text-decoration: none;
-        color: #fff;
+        color: black;
         font-weight: bold;
+        font-family: serif;
+      }
+      &--text:hover {
+        color: rgb(0, 72, 205);
       }
     }
+    
     &__right{
+
       .post__btn {
-        background-color: #35cec1;
+        background-color: #1b7eff;
         box-shadow: 0 0 3px rgb(85, 85, 85);
-        height: 50px;
-        width: 150px;
+        width: 120px;
+        height: 40px;
         border-radius: 60px;
         // border: solid #f6f6f6;
         font-size: 20px;
         font-weight: bold;
-        line-height: 50px;
+        line-height: 40px;
         text-align: center;
         color: #ffffff;
         position: absolute;
           top: 150px;
-          right: 50px;
+          right: 85px;
         z-index: 10;
         .giga-btn {
           color: #ffffff;
@@ -45,19 +51,23 @@ body{
         color: rgb(224, 224, 224);
         transform: scale(1.1, 1.1);
         transition: all 0.1s ease;
+        background-color: rgb(37, 37, 200);
       }
       &--btn{
         text-decoration: none;
         line-height: 56px;
-        color: #fff;
-        margin-left:15px;
+        color: black;
+        margin-left:30px;
         font-weight: bold;
+      }
+      &--btn:hover {
+        color: rgb(0, 72, 205);
       }
     }
   }
   
   .contents{
-    margin: 30px auto 0;
+    margin: 70px auto 0;
     height: 900px;
     width: 70%;
     display: flex;

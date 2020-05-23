@@ -1,3 +1,5 @@
+.new-line
+  = "#{current_user.nickname} さんの投稿"
 .content-man
   .show__image
     = image_tag @post.image.url, class: 'post__image' if @post.image.present?
