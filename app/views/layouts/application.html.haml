@@ -2,7 +2,7 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title Garage L
+    %title Our Log
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag    'application', media: 'all'
@@ -10,6 +10,7 @@
   %body
     .header
       .header__title
+        = image_tag "/ourlog.png", width: " 9% ", class:"logo"
         = link_to "Our Log", root_path, class: "header__title--text"
       .header__right
         - if user_signed_in?
@@ -20,6 +21,8 @@
         - else
           = link_to "ログイン", new_user_session_path, class: "header__right--btn"
           = link_to "新規登録", new_user_registration_path, class: "header__right--btn"
+    - unless user_signed_in?
+      .alert_man 投稿するにはユーザー登録、またはログインしてください
     .contents
       = yield
     

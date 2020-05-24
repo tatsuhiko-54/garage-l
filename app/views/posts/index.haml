@@ -1,3 +1,68 @@
-
+.content
+  .content__image
+    = image_tag "/りんご.jpg"
+    .title-man 
+      = link_to "タイトル", "/", class: "link1"
+  .content__right
+    .content__right__bottom
+      .content__right__bottom--userName
+        = "＠テストまん"
+      .content__right__bottom--date
+        05月21日 23時01分
+.content
+  .content__image
+    = image_tag "/wave.png"
+    .title-man 
+      = link_to "New World", "/", class: "link1"
+  .content__right
+    .content__right__bottom
+      .content__right__bottom--userName
+        = "＠テストまん"
+      .content__right__bottom--date
+        05月21日 23時01分
+.content
+  .content__image
+    = image_tag "/wa.png"
+    .title-man 
+      = link_to "模様替え", "/", class: "link1"
+  .content__right
+    .content__right__bottom
+      .content__right__bottom--userName
+        = "＠テストまん"
+      .content__right__bottom--date
+        05月21日 23時05分
+.content
+  .content__image
+    = image_tag "/ke.jpg"
+    .title-man 
+      = link_to "富士っさん。", "/", class: "link1"
+  .content__right
+    .content__right__bottom
+      .content__right__bottom--userName
+        = "＠テストまん"
+      .content__right__bottom--date
+        05月21日 23時08分
+.content
+  .content__image
+    = image_tag "/cafe.jpeg"
+    .title-man 
+      = link_to "Work man", "/", class: "link1"
+  .content__right
+    .content__right__bottom
+      .content__right__bottom--userName
+        = "＠テストまん"
+      .content__right__bottom--date
+        05月21日 23時01分
+.content
+  .content__image
+    = image_tag "/images.jpeg"
+    .title-man 
+      = link_to "Japan", "/", class: "link1"
+  .content__right
+    .content__right__bottom
+      .content__right__bottom--userName
+        = "＠テストまん"
+      .content__right__bottom--date
+        05月21日 23時01分
 - @posts.each do |post|
   = render partial: "post", locals: { post: post }
