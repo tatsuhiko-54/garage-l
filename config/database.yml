@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: garage-l_production
-  username: garage-l
-  password: <%= ENV['GARAGE-L_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
