@@ -33,13 +33,12 @@ body{
     }
     
     &__right{
-      box-shadow: 0 0 3px rgb(85, 85, 85);
-      width: 350px;
-      padding-left: 20px ;
+      width: 750px;
+      padding-left: 120px ;
       .post__btn {
         background-color: #1b7eff;
         box-shadow: 0 0 3px rgb(85, 85, 85);
-        width: 20px;
+        width: 110px;
         height: 40px;
         border-radius: 60px;
         // border: solid #f6f6f6;
@@ -50,7 +49,7 @@ body{
         color: #ffffff;
         position: absolute;
           top: 150px;
-          right: 195px;
+          right: 180px;
         z-index: 10;
         .giga-btn {
           color: #ffffff;
@@ -68,7 +67,8 @@ body{
         text-decoration: none;
         line-height: 56px;
         color: black;
-        margin-left:30px;
+        // margin-left:30px;
+        margin-left: 15%;
         font-weight: bold;
       }
       &--btn:hover {
